@@ -1,1 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-success btn-sm float-right">
+                افزودن
+            </button>
+        </div>
+        <ng-container  *ngFor="let rec of recpies">
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-8 text-right">
+                     <h5><strong>{{rec.name}}</strong></h5>
+                       <p><strong>{{rec.description}}</strong></p>
+                  </div>
+                 <div class="col-md-4">
+                    <img [src]="rec.imagePath" height="50">
+                </div>
+             </div>
+
+
+        </div>
+            <hr/>
+        </ng-container>
+    </div>
+</div>
 <app-recpie-item></app-recpie-item>
