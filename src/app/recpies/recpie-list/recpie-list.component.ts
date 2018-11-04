@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {recpie} from '../recpie.model';
+import {recpie} from '../../Shares/Models/recpie.model';
 
 @Component({
   selector: 'app-recpie-list',
